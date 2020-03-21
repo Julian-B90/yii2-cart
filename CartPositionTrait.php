@@ -9,6 +9,7 @@ use yii\base\Component;
  * @property int $quantity Returns quantity of cart position
  * @property int $cost Returns cost of cart position. Default value is 'price * quantity'
  * @package yz\shoppingcart
+ * THIS IS A TEST
  */
 trait CartPositionTrait
 {
@@ -42,4 +43,4 @@ trait CartPositionTrait
             $cost = max(0, $cost - $costEvent->discountValue);
         return $cost;
     }
-} 
+}
