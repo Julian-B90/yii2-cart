@@ -1,8 +1,11 @@
 {
     "name": "hscstudio/yii2-cart",
     "description": "Yii2 extension that adds shopping cart functions",
-    "keywords": ["yii", "shopping cart"],
-	"license": "MIT",
+    "keywords": [
+        "yii",
+        "shopping cart"
+    ],
+    "license": "MIT",
     "authors": [
         {
             "name": "Hafid Mukhlasin",
@@ -11,9 +14,21 @@
     ],
     "type": "yii2-extension",
     "require": {
-        "php": ">=5.4.0",
-        "yiisoft/yii2": "*"
+        "php": ">=5.6.0",
+        "yiisoft/yii2": "~2.0.14"
     },
+    "config": {
+        "process-timeout": 1800,
+        "fxp-asset": {
+            "enabled": false
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "hscstudio\\cart\\": ""
